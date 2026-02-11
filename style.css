@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -13,7 +14,7 @@ body{
 
 .container {
     background-color: #fff;
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
     height: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -24,11 +25,16 @@ body{
 
 .container>h1 {
     text-align: center;
-    margin-bottom: 30px
+    margin: 30px 0;
 }
 
 .container .all-balance {
-    
+    text-align: center;
+}
+
+.all-balance p:last-child{
+    font-size: 36px;
+    margin: 10px;
 }
 
 .container .balance {
@@ -36,20 +42,106 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #56ab2f;
+    background-color: #3CD63C;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .tracker{
     display: flex;
     justify-content: space-around;
-    outline: 1px solid yellow;
+    width: 100%;
+    gap: 20px;
+}
+
+.tracker .total-income,.tracker .total-expenses {
+    text-align: center;
+    background-color: #fff;
+    flex: 1;
+    border-radius: 10px;
+    padding: 30px;
+    color: green;
+}
+
+.tracker .total-expenses {
+    color: red;
+}
+
+.total-expenses p:last-child,.total-income p:last-child{
+    font-size: 36px;
+}
+
+.card {
+    display: flex;
+    margin-top: 30px;
+    height: 50%;
+    gap: 20px;
 }
 
 .transaction {
-    outline: 1px solid blue;
+    flex: 1;
 }
 
-.add-transaction {
-    outline: 1px solid green;
+.add-transaction {  
+    flex: 1;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    line-height: 2.0;
+}
+
+.add-transaction h1,.transaction h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.add-transaction input {
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.add-transaction input:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 2px rgba(34,197,94,0.15);
+}
+
+.add-transaction p {
+    color: #A6ADA6;
+    font-size: 14px;
+}
+
+.add-transaction button {
+    margin-top: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #22c55e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-transaction button:hover {
+    background-color: #16a34a;
+}
+
+.transaction .new-task{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 25px;
+   background-color: #F7F7F7;
+   border-radius: 10px;
+   margin: 10px 0;
+}
+
+.income {
+    border-right: 5px solid #22c55e;
+}
+
+.expense {
+    border-right: 5px solid #ef4444;
 }
