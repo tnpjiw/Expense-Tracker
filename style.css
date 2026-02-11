@@ -114,7 +114,7 @@ body{
     font-size: 14px;
 }
 
-.add-transaction button {
+.add-transaction .btn {
     margin-top: auto;
     border: none;
     border-radius: 10px;
@@ -125,7 +125,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.add-transaction button:hover {
+.add-transaction .btn:hover {
     background-color: #16a34a;
 }
 
@@ -138,10 +138,10 @@ body{
    margin: 10px 0;
 }
 
-.income {
+.is-income {
     border-right: 5px solid #22c55e;
 }
 
-.expense {
+.is-expense {
     border-right: 5px solid #ef4444;
 }
